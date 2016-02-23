@@ -19,55 +19,55 @@
         <clobbers target="pingpp"/>
     </js-module>
 
-    <!--<platform name="android">-->
-        <!--<config-file target="res/xml/config.xml" parent="/*">-->
-            <!--<feature name="PingppPlugin">-->
-                <!--<param name="android-package" value="co.airsia.cordova.PingppPlugin"/>-->
-            <!--</feature>-->
-        <!--</config-file>-->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="PingppPlugin">
+                <param name="android-package" value="com.heytz.cordova.PingppPlugin"/>
+            </feature>
+        </config-file>
 
-        <!--<config-file target="AndroidManifest.xml" parent="/*">-->
-            <!--<uses-permission android:name="android.permission.INTERNET"/>-->
-            <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
-            <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>-->
-            <!--<uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
-            <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
-            <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>-->
-            <!--<uses-permission android:name="android.permission.WRITE_SETTINGS"/>-->
-            <!--<uses-permission android:name="android.permission.SEND_SMS"/>-->
-            <!--<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>-->
-            <!--<uses-permission android:name="android.permission.READ_SMS"/>-->
-        <!--</config-file>-->
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+            <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+            <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+            <uses-permission android:name="android.permission.SEND_SMS"/>
+            <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+            <uses-permission android:name="android.permission.READ_SMS"/>
+        </config-file>
 
-        <!--<config-file target="AndroidManifest.xml" parent="application">-->
-            <!--<activity-->
-                    <!--android:name="com.pingplusplus.android.PaymentActivity"-->
-                    <!--android:launchMode="singleTop"-->
-                    <!--android:theme="@android:style/Theme.Translucent.NoTitleBar"/>-->
-            <!--<activity-alias-->
-                    <!--android:name=".wxapi.WXPayEntryActivity"-->
-                    <!--android:exported="true"-->
-                    <!--android:targetActivity="com.pingplusplus.android.PaymentActivity"/>-->
-            <!--<activity-->
-                    <!--android:name="com.alipay.sdk.app.H5PayActivity"-->
-                    <!--android:configChanges="orientation|keyboardHidden|navigation"-->
-                    <!--android:exported="false"-->
-                    <!--android:screenOrientation="behind"/>-->
-            <!--<activity-->
-                    <!--android:name="com.alipay.sdk.auth.AuthActivity"-->
-                    <!--android:configChanges="orientation|keyboardHidden|navigation"-->
-                    <!--android:exported="false"-->
-                    <!--android:screenOrientation="behind"/>-->
-        <!--</config-file>-->
+        <config-file target="AndroidManifest.xml" parent="application">
+            <activity
+                    android:name="com.pingplusplus.android.PaymentActivity"
+                    android:launchMode="singleTop"
+                    android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+            <activity-alias
+                    android:name=".wxapi.WXPayEntryActivity"
+                    android:exported="true"
+                    android:targetActivity="com.pingplusplus.android.PaymentActivity"/>
+            <activity
+                    android:name="com.alipay.sdk.app.H5PayActivity"
+                    android:configChanges="orientation|keyboardHidden|navigation"
+                    android:exported="false"
+                    android:screenOrientation="behind"/>
+            <activity
+                    android:name="com.alipay.sdk.auth.AuthActivity"
+                    android:configChanges="orientation|keyboardHidden|navigation"
+                    android:exported="false"
+                    android:screenOrientation="behind"/>
+        </config-file>
 
-        <!--<source-file src="src/android/PingppPlugin.java" target-dir="src/co/airsia/cordova/"/>-->
-        <!--<source-file src="libs/android/alipaysdk.jar" target-dir="libs" framework="true"/>-->
-        <!--<source-file src="libs/android/alipaysecsdk.jar" target-dir="libs" framework="true"/>-->
-        <!--<source-file src="libs/android/alipayutdid.jar" target-dir="libs" framework="true"/>-->
-        <!--<source-file src="libs/android/libammsdk.jar" target-dir="libs" framework="true"/>-->
-        <!--<source-file src="libs/android/libpingpp.jar" target-dir="libs" framework="true"/>-->
-        <!--<source-file src="libs/android/UPPayAssistEx.jar" target-dir="libs" framework="true"/>-->
-    <!--</platform>-->
+        <source-file src="src/android/PingppPlugin.java" target-dir="src/com/heytz/cordova/"/>
+        <source-file src="libs/android/alipaysdk.jar" target-dir="libs" framework="true"/>
+        <source-file src="libs/android/alipaysecsdk.jar" target-dir="libs" framework="true"/>
+        <source-file src="libs/android/alipayutdid.jar" target-dir="libs" framework="true"/>
+        <source-file src="libs/android/libammsdk.jar" target-dir="libs" framework="true"/>
+        <source-file src="libs/android/libpingpp.jar" target-dir="libs" framework="true"/>
+        <source-file src="libs/android/UPPayAssistEx.jar" target-dir="libs" framework="true"/>
+    </platform>
 
     <platform name="ios">
         <!-- framework -->
